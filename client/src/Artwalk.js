@@ -1,25 +1,28 @@
-import React, {Component} from 'react';
-import {Link} from "@reach/router";
+import { Link } from "@reach/router";
+function Artwalk(props) {
 
-class Artwalk extends Component {
-    render() {
-        const artwalk = this.props.getArtwalk(this.props.id);
-        let content = <p>Loading</p>;
-        if (artwalk) {
-            content =
-                <>
-                    <h1>{artwalk.name}</h1>
 
-                    <h3>Bilds</h3>
-                    <ul>
-                        {artwalk.bilds}
-                    </ul>
+  const artwalk = props.getArtwalk(props.id);
+  let content = <p>Loading</p>;
+  if (artwalk) {
+    content =
+      <>
+        <h1>{artwalk.name}</h1>
 
-                    <Link to="/">Back</Link>
-                </>
-        }
-        return content;
-    }
+        <h3>Bilds</h3>
+        <ul>
+          {artwalk.bilds}
+        </ul>
+
+       
+
+       
+        <br />
+        <Link to="/">Back</Link>
+      </>
+  }
+
+  return content;
 }
 
 export default Artwalk;
