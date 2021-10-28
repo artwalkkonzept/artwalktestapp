@@ -1,16 +1,20 @@
 {
   "name": "artwalk-mern-app",
   "version": "1.0.0",
+  "dependencies": {
+    "nedb": "^1.8.0"
+  },
   "scripts": {
     "start": "cd server && npm start",
-    "react-dev": "cd client && npm start",
+    "dev": "cd client/artwalk-albums && npm start",
     "test": "cd server && npm test",
     "preinstall": "cd server && npm install",
-    "install": "cd client && npm install",
-    "build": "cd client && npm run build"
+    "install": "cd client/artwalk-albums && npm install",
+    "build": "cd client/artwalk-albums && npm run build"
   },
-  "license": "ISC",
-  "dependencies": {
-    "redux-thunk": "^2.3.0"
-  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artwalkkonzept/artwalktestapp/tree/artwalktestapp-hooks"
+  },
+  "author": ""
 }

@@ -1,4 +1,4 @@
-import { combineReducers } from 'redux';
+import { combineReducers } from "redux";
 
 /**
  * This artwalks reducer function implements these actions:
@@ -7,7 +7,7 @@ import { combineReducers } from 'redux';
 */
 function artwalks(state = [], action) {
   switch (action.type) {
-    case 'ADD_ARTWALK': {
+    case "ADD_ARTWALK": {
       const artwalk = {
         _id: action.id,
         name: action.name,
@@ -15,7 +15,7 @@ function artwalks(state = [], action) {
       };
       return [...state, artwalk];
     }
-    case 'ADD_BILD': {
+    case "ADD_BILD": {
       return state.map(artwalk => artwalk._id === action.artwalkId ?
       { ...artwalk, bilds: [...artwalk.bilds, action.bild] } : artwalk);
     }

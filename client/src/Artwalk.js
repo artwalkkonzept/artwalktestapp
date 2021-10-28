@@ -1,8 +1,9 @@
 import { Link } from "@reach/router";
-function Artwalk(props) {
 
+function Artwalk(props) {
   const artwalk = props.getArtwalk(props.id);
   let content = <p>Loading</p>;
+  
   if (artwalk) { 
   content =
     <>
