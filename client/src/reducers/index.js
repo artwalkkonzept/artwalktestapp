@@ -1,5 +1,4 @@
 import { combineReducers } from 'redux';
-<<<<<<< HEAD
 
 /**
  * This artwalks reducer function implements these actions:
@@ -26,9 +25,6 @@ function artwalks(state = [], action) {
 }
 
 export {artwalks};
-=======
-import { artwalks } from './artwalks';
->>>>>>> 94b0c1dceaae8731d5bed1d3cd0ccd89f2b28e00
 
 export default combineReducers({
   artwalks
