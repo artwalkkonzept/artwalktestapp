@@ -9,7 +9,6 @@ function Artwalk(props) {
     <Link to="/">Back</Link>
       <br />
       <h3>Current ArtWalk</h3>
-      <br />
       <h3>{artwalk.name}</h3>
       <h3>Bild</h3>
       <ul>
