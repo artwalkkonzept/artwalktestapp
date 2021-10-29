@@ -1,4 +1,4 @@
-import companyLogo from "./ArtWalk_Logo final_ww.png";
+import companyLogo from '../content/ArtWalk_Logo final_ww.png';
 
 function Gallery() {
   return (

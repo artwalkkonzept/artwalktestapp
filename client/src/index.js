@@ -8,15 +8,15 @@ import thunkMiddleware from "redux-thunk";
 // Our reducer functions lives inside this module
 import reducer from "./reducers";
 
-// Import fetch ACTION
+// Import fetch action
 export const addBild = (artwalkId, bild) => ({
-  type: "ADD_BILD",
+  type: 'ADD_BILD',
   bild: bild,
   artwalkId: artwalkId
 });
 
 export const addArtwalk = (id, name, bilds) => ({
-  type: "ADD_ARTWALK",
+  type: 'ADD_ARTWALK',
   id: id,
   name: name,
   bilds: bilds
@@ -56,5 +56,5 @@ ReactDOM.render(
       <App />
     </Provider>
   </React.StrictMode>,
-  document.getElementById("root")
+  document.getElementById('root')
 );

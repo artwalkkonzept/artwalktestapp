@@ -12,10 +12,5 @@
   "license": "ISC",
   "dependencies": {
     "redux-thunk": "^2.3.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/artwalkkonzept/artwalktestapp.git"
-  },
-  "author": ""
+  }
 }

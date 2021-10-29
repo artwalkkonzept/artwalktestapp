@@ -11,7 +11,7 @@ class Db {
     });
 
     // This model is used in the methods of this class to access artwalks
-    this.artwalkModel = mongoose.model("artwalk", artwalkSchema);
+    this.artwalkModel = mongoose.model('artwalk', artwalkSchema);
   }
 
   async getArtwalks() {
