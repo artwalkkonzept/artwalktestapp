@@ -16,7 +16,8 @@ function App() {
   }
 
   return (
-    <><h3>ArtWalk touren</h3>
+    <>
+    <h3>ArtWalk touren</h3>
       <Router>
         <Artwalk path="/artwalk/:id" getArtwalk={getArtwalk} />
         <Artwalks path="/" artwalks={artwalks} />
