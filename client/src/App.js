@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux"
 import { Router } from "@reach/router";
-import Artwalk from "./Artwalk";
-import Artwalks from "./Artwalks";
+import Artwalk from "./Tours/Artwalk";
+import Artwalks from "./Tours/Artwalks";
 import Logo from "./logo/Logo";
 
 function App() {
