@@ -6,13 +6,14 @@ function Artwalk(props) {
   if (artwalk) { 
   content =
     <>
-      <h1>{artwalk.name}</h1>
-      <h3>Bilds</h3>
+    <Link to="/">Back</Link>
+      <br />
+      <h3>{artwalk.name}</h3>
+      <h3>Bilder</h3>
       <ul>
         {artwalk.bilds}
       </ul>
       <br />
-      <Link to="/">Back</Link>
     </>
   }
 
