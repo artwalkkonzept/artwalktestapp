@@ -3,7 +3,6 @@ import { Link } from "@reach/router";
 function Artwalks(props) {
   return (
     <>
-      <h3>ArtWalk Touren</h3>
       <ol>
         {props.artwalks.map(artwalk =>
           <li key={artwalk._id}>
