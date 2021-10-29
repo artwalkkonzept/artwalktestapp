@@ -2,9 +2,6 @@
   "name": "artwalk-node-api-server",
   "version": "1.0.0",
   "main": "server.js",
-  "engines": {
-    "node": "14.17.5"
-  },
   "scripts": {
     "start": "node src/index.js"
   },
