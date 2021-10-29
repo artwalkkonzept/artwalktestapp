@@ -33,19 +33,19 @@ The app opens on port 8080 by default. If the environment variable **PORT** is s
 In production mode, the React app expects to find the API on the same port as itself on the `/api` path. In development mode, the React app expects to find the api on http://localhost:8080/api/ instead. You can change this in the React `.env` files.
 
 ## Server implementation
-It"s worth noting that a trick is used in the server implementation to concurrently serve the API and the React app from the same server app.
+It's worth noting that a trick is used in the server implementation to concurrently serve the API and the React app from the same server app.
 
 By default, when the express.js server receives a request, it tries to match it with one of the API routes. If none matches, it serves one of the static files instead. If none of those matches, it serves the React index.html file. This enables client-side routing in the React app (with React Router or similar library) without overriding the server API or hiding any of the other static assets.
 
 Relevant code snippets from `server.js`:
 ```js
   // Serve the static files
-  app.use(express.static(path.resolve("..", "client", "build"))); 
+  app.use(express.static(path.resolve('..', 'client', 'build'))); 
 ```
 
 ```js
-  // "Redirect" all non-API GET requests to React"s entry point (index.html)
-  app.get("*", (req, res) =>
-    res.sendFile(path.resolve("..", "client", "build", "index.html"))
+  // "Redirect" all non-API GET requests to React's entry point (index.html)
+  app.get('*', (req, res) =>
+    res.sendFile(path.resolve('..', 'client', 'build', 'index.html'))
   );
 ```

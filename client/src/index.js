@@ -8,31 +8,8 @@ import thunkMiddleware from "redux-thunk";
 // Our reducer functions lives inside this module
 import reducer from "./reducers";
 
-// Import fetch ACTION
-export const addBild = (artwalkId, bild) => ({
-  type: "ADD_BILD",
-  bild: bild,
-  artwalkId: artwalkId
-});
-
-export const addArtwalk = (id, name, bilds) => ({
-  type: "ADD_ARTWALK",
-  id: id,
-  name: name,
-  bilds: bilds
-});
-
-const API_URL = process.env.REACT_APP_API_URL;
-
-export const fetchArtwalks = _ => async function (dispatch) {
-  const url = `${API_URL}/artwalks`;
-  console.log(`Fetching from ${url}`);
-  const result = await fetch(url);
-  const data = await result.json();
-  for (const artwalk of data) {
-    dispatch(addArtwalk(artwalk._id, artwalk.name, artwalk.bilds));
-  }
-};
+// Import fetch action
+import { fetchArtwalks } from "./actions";
 
 // Logging middleware for the store. Prints out all actions in the redux store to the browser console.
 const logger = store => next => action => {
@@ -56,5 +33,5 @@ ReactDOM.render(
       <App />
     </Provider>
   </React.StrictMode>,
-  document.getElementById("root")
+  document.getElementById('root')
 );
