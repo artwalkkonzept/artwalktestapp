@@ -9,6 +9,7 @@ import thunkMiddleware from "redux-thunk";
 import reducer from "./reducers";
 
 // Import fetch action
+<<<<<<< HEAD
 export const addBild = (artwalkId, bild) => ({
   type: 'ADD_BILD',
   bild: bild,
@@ -33,6 +34,9 @@ export const fetchArtwalks = _ => async function (dispatch) {
     dispatch(addArtwalk(artwalk._id, artwalk.name, artwalk.bilds));
   }
 };
+=======
+import { fetchArtwalks } from "./actions";
+>>>>>>> 94b0c1dceaae8731d5bed1d3cd0ccd89f2b28e00
 
 // Logging middleware for the store. Prints out all actions in the redux store to the browser console.
 const logger = store => next => action => {

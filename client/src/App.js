@@ -1,8 +1,14 @@
 import { useSelector } from 'react-redux'
 import { Router } from "@reach/router";
+<<<<<<< HEAD
 import Artwalk from "./Artwalk";
 import Artwalks from "./Artwalks";
 import Gallery from "./components/Gallery";
+=======
+import Artwalk from "./tours/Artwalk";
+import Artwalks from "./tours/Artwalks";
+import Logo from "./logo/Logo";
+>>>>>>> 94b0c1dceaae8731d5bed1d3cd0ccd89f2b28e00
 
 function App() {
 
@@ -17,6 +23,10 @@ function App() {
 
   return (
     <>
+<<<<<<< HEAD
+=======
+      <h3>ArtWalk touren</h3>
+>>>>>>> 94b0c1dceaae8731d5bed1d3cd0ccd89f2b28e00
       <Router>
         <Artwalk path="/artwalk/:id" getArtwalk={getArtwalk} />
         <Artwalks path="/" artwalks={artwalks} />
