@@ -2,7 +2,6 @@ import { useSelector } from 'react-redux'
 import { Router } from "@reach/router";
 import Artwalk from "./Artwalk";
 import Artwalks from "./Artwalks";
-import Gallery from "./components/Gallery";
 
 function App() {
 
@@ -21,7 +20,6 @@ function App() {
         <Artwalk path="/artwalk/:id" getArtwalk={getArtwalk} />
         <Artwalks path="/" artwalks={artwalks} />
       </Router>
-      <Gallery/>
     </>
   );
 }
