@@ -8,8 +8,7 @@ function Artwalk(props) {
     content =
       <>
         <h1>{artwalk.name}</h1>
-
-        <h3>Bilds</h3>
+        <h3>Bilder</h3>
         <ul>
           {artwalk.bilds}
         </ul>
